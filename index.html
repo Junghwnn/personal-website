@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Junghwan Kim personal website">
+  <title>Junghwan Kim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="site-title">Junghwan Kim</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="projects.html">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle">Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div>
+        <h2>Hi, I'm Junghwan.</h2>
+        <p>
+          I'm a Statistics student at UC Berkeley interested in data, coding,
+          and building useful projects.
+        </p>
+        <a class="simple-link" href="projects.html">See my projects →</a>
+      </div>
+      <img src="images/profile.jpg" alt="Profile photo">
+    </section>
+
+    <section id="about">
+      <h3>About Me</h3>
+      <p>
+        I'm studying Statistics at UC Berkeley and enjoy working on projects that combine data and coding.
+        I like turning ideas into projects that are practical and useful.
+      </p>
+    </section>
+
+    <section id="hobbies">
+      <h3>Hobbies</h3>
+      <ul>
+        <li>Baseball</li>
+        <li>Photography</li>
+        <li>Traveling</li>
+        <li>Korean Musics</li>
+      </ul>
+
+      <div class="photos">
+        <img src="images/hobby1.jpg" alt="Hobby photo 1">
+        <img src="images/hobby2.jpg" alt="Hobby photo 2">
+        <img src="images/hobby3.jpg" alt="Hobby photo 3">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input id="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Junghwan Kim</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
